@@ -1,0 +1,69 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  position: relative;
+  @include mixins.mq(730px) {
+    justify-content: space-between;
+  }
+}
+
+.header__icon_wrap {
+  width: 150px;
+}
+
+.header__navigation_list {
+  display: none;
+  a {
+    display: block;
+    border: 1px solid black;
+    padding: 8px 10px;
+    background-color: variables.$grey;
+    text-decoration: none;
+    color: black;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    li:last-of-type {
+      margin-right: 20px;
+    }
+  }
+  @include mixins.mq(730px) {
+    display: block;
+  }
+}
+
+.header__hamburger_nav_icon {
+  @include mixins.mq(730px) {
+    display: none;
+  }
+  position: absolute;
+  left: 25px;
+  &:hover {
+    .header__hamburger-line {
+      position: relative;
+      &.two {
+        transform: translateX(-20em);
+      }
+      &.one {
+        transform: rotate(135deg);
+      }
+      &.three {
+        transform: rotate(-135deg);
+        top: -25px;
+      }
+    }
+  }
+  .header__hamburger-line {
+    transition: all 1s;
+  }
+}

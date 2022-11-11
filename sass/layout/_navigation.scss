@@ -1,0 +1,13 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.header__hamburger_nav_icon {
+  .header__hamburger-line {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    & + .header__hamburger-line {
+      margin-top: 10px;
+    }
+  }
+}
