@@ -150,4 +150,41 @@ select {
   margin-top: 10px;
 }
 
+.footer__small button {
+  background-color: #9cc1b4;
+  color: white;
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  padding: 10px 0;
+}
+.footer__small_text_wrap {
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__small_text_wrap h2 {
+  color: #9cc1b4;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+.footer__small_text_wrap ul {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer__small_text_wrap ul li {
+  width: 50px;
+}
+.footer__small_text_wrap ul a {
+  display: block;
+}
+
 /*# sourceMappingURL=styles.css.map */
