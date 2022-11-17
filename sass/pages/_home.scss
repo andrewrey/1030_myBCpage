@@ -1,0 +1,39 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main__small {
+  .main__small_welcome {
+    width: 90%;
+    margin: 0 auto;
+    h1 {
+      color: variables.$green1;
+    }
+  }
+
+  .main__small_welcome-card {
+    background-clip: padding-box;
+    background-color: variables.$green1;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 4px rgba(black, 0.2);
+    .card__img_wrap,
+    img {
+      border-radius: 20px 20px 0 0;
+    }
+
+    .card__text_wrap {
+      padding: 10px 25px 20px;
+      h2 {
+        color: white;
+      }
+    }
+  }
+  button {
+    text-transform: uppercase;
+    display: block;
+    background-color: variables.$dgrey;
+    color: white;
+    padding: 10px 60px;
+    margin: 0 auto;
+  }
+}

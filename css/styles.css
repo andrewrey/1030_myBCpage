@@ -124,7 +124,7 @@ select {
 }
 
 #header__search_form {
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
   flex-basis: 90%;
   max-width: 450px;
   min-width: 335px;
@@ -185,6 +185,39 @@ select {
 }
 .footer__small_text_wrap ul a {
   display: block;
+}
+
+.main__small .main__small_welcome {
+  width: 90%;
+  margin: 0 auto;
+}
+.main__small .main__small_welcome h1 {
+  color: #9cc1b4;
+}
+.main__small .main__small_welcome-card {
+  background-clip: padding-box;
+  background-color: #9cc1b4;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.main__small .main__small_welcome-card .card__img_wrap,
+.main__small .main__small_welcome-card img {
+  border-radius: 20px 20px 0 0;
+}
+.main__small .main__small_welcome-card .card__text_wrap {
+  padding: 10px 25px 20px;
+}
+.main__small .main__small_welcome-card .card__text_wrap h2 {
+  color: white;
+}
+.main__small button {
+  text-transform: uppercase;
+  display: block;
+  background-color: #474554;
+  color: white;
+  padding: 10px 60px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
